@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-09T14:19:14 AST" name="Default suite" finished-at="2024-11-09T14:19:14 AST" duration-ms="44">
+  <suite started-at="2025-03-31T13:30:51 AST" name="Default suite" finished-at="2025-03-31T13:34:25 AST" duration-ms="214558">
     <groups>
     </groups>
-    <test started-at="2024-11-09T14:19:14 AST" name="Default test" finished-at="2024-11-09T14:19:14 AST" duration-ms="44">
+    <test started-at="2025-03-31T13:30:51 AST" name="Default test" finished-at="2025-03-31T13:34:25 AST" duration-ms="214558">
+      <class name="driverFactory.AppTest">
+        <test-method signature="kickStart()[pri:0, instance:driverFactory.AppTest@4b29d1d2]" started-at="2025-03-31T13:30:51 AST" name="kickStart" finished-at="2025-03-31T13:34:25 AST" duration-ms="214246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kickStart -->
+      </class> <!-- driverFactory.AppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

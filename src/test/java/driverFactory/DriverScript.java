@@ -2,10 +2,9 @@ package driverFactory;
 
 import org.openqa.selenium.WebDriver;
 
-
 import commonFunctions.FunctionLibrary;
 import utilities.ExcelFileUtil;
-	
+
 public class DriverScript {
 
 	WebDriver driver;
@@ -65,6 +64,37 @@ public class DriverScript {
 						{
 							FunctionLibrary.closeBrowser();
 						}
+						if(ObjectType.equalsIgnoreCase("dropDownAction"))
+						{
+							FunctionLibrary.dropDownAction(Ltype, Lvalue, TestData);
+						}
+						if(ObjectType.equalsIgnoreCase("captureStock"))
+						{
+							FunctionLibrary.captureStock(Ltype, Lvalue);
+						}
+						if(ObjectType.equalsIgnoreCase("stockTable"))
+						{
+							FunctionLibrary.stockTable();
+						}
+
+						if(ObjectType.equalsIgnoreCase("capturesup"))
+						{
+							FunctionLibrary.capturesup(Ltype, Lvalue);
+						}
+						if(ObjectType.equalsIgnoreCase("suppliertable"))
+						{
+							FunctionLibrary.suppliertable();
+						}
+						if(ObjectType.equalsIgnoreCase("capturecus"))
+						{
+							FunctionLibrary.capturecus(Ltype, Lvalue);
+						}
+						if(ObjectType.equalsIgnoreCase("customertable"))
+						{
+							FunctionLibrary.customertable();
+						}
+
+
 						//write as pass into status cell in TCModule sheet
 						xl.setCellData(TCModule, j, 5, "Pass", outputpath);
 						Module_Status ="True";
